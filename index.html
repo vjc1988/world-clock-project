@@ -7,14 +7,32 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>World Clocks</h1>
-    <footer>
-      Coded with 🩷 by <a href="https://github.com/vjc1988">Victoria Cadd</a>,
-      open sourced on
-      <a href="https://github.com/vjc1988/world-clock-project">GitHub</a> and
-      hosted by
-      <a href="https://world-clocks-update.netlify.app">Netlify</a>
-    </footer>
+    <div class="container">
+      <h1>World Clocks</h1>
+      <select id="city-select">
+        <option value="">Choose a city...</option>
+        <option value="">New York</option>
+        <option value="">London</option>
+        <option value="">Tokyo</option>
+      </select>
+      <div class="city">
+        <h2>New York</h2>
+        <div class="date">Friday 19th April 2024</div>
+        <div class="time">11:31am</div>
+      </div>
+      <div class="city">
+        <h2>Tokyo</h2>
+        <div class="date">Friday 19th April 2024</div>
+        <div class="time">11:31am</div>
+      </div>
+      <footer>
+        Coded with 🩷 by <a href="https://github.com/vjc1988">Victoria Cadd</a>,
+        open sourced on
+        <a href="https://github.com/vjc1988/world-clock-project">GitHub</a> and
+        hosted by
+        <a href="https://world-clocks-update.netlify.app">Netlify</a>
+      </footer>
+    </div>
   </body>
   <script src="src/index.js"></script>
 </html>
