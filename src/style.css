@@ -1,5 +1,50 @@
+Body {
+  background-color: #ffa952;
+  font-family: "Open Sans", sans-serif;
+}
+
 h1 {
   text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  font-weight: 900;
+  margin: 0;
+}
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.container {
+  max-width: 600px;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.date {
+  opacity: 0.7;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 20px;
 }
 
 footer {
