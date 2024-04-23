@@ -1,5 +1,5 @@
 Body {
-  background-color: #ffa952;
+  background-color: #f9f6f7;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -32,6 +32,12 @@ select {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: dashed 1px #ffe8d6;
+}
+
+.city:last-child {
+  border: none;
 }
 
 .date {
@@ -49,4 +55,6 @@ select {
 
 footer {
   text-align: center;
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.8);
 }
