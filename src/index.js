@@ -12,6 +12,9 @@ function currentTime() {
 
 function changeCity(event) {
   let city = event.target.value;
+  if (city === "current") {
+    city = moment.tz.guess();
+  }
   let cityName = city.replace("_", " ").split("/")[1];
   let cityTimeZone = moment().tz(city);
 
