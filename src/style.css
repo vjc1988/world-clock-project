@@ -16,8 +16,9 @@ h2 {
 }
 select {
   width: 100%;
-  padding: 8px;
+  padding: 13px;
   border-radius: 8px;
+  font-size: 15px;
 }
 
 .container {

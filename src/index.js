@@ -41,7 +41,7 @@ function changeCity(event) {
   let citySelect = document.querySelector("#city");
   citySelect.innerHTML = `<div class="city">
           <div>
-            <h2>${cityName}</h2>
+            <h2>${cityName} 🌎</h2>
             <div class="date">${cityTimeZone.format("dddd Do MMMM YYYY")}</div>
           </div>
           <div class="time">${cityTimeZone.format(
