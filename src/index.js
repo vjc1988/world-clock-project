@@ -8,6 +8,26 @@ function currentTime() {
   newYorkTimeElement.innerHTML = newYorkTime.format(
     "HH:mm:ss [<small>]A[</small>]"
   );
+
+  let tokyoElement = document.querySelector("#tokyo");
+  let tokyoDateElement = tokyoElement.querySelector(".date");
+  let tokyoTimeElement = tokyoElement.querySelector(".time");
+  let tokyoTime = moment().tz("Asia/Tokyo");
+
+  tokyoDateElement.innerHTML = tokyoTime.format("dddd Do MMMM YYYY");
+  tokyoTimeElement.innerHTML = tokyoTime.format(
+    "HH:mm:ss [<small>]A[</small>]"
+  );
+
+  let londonElement = document.querySelector("#london");
+  let londonDateElement = londonElement.querySelector(".date");
+  let londonTimeElement = londonElement.querySelector(".time");
+  let londonTime = moment().tz("Europe/London");
+
+  londonDateElement.innerHTML = londonTime.format("dddd Do MMMM YYYY");
+  londonTimeElement.innerHTML = londonTime.format(
+    "HH:mm:ss [<small>]A[</small>]"
+  );
 }
 
 function changeCity(event) {
@@ -27,11 +47,13 @@ function changeCity(event) {
           <div class="time">${cityTimeZone.format(
             "HH:mm:ss"
           )} <small>${cityTimeZone.format("A")}</small>
-        </div>`;
+        </div>
+        </div>
+        <a href="/">Return to Cities</a>`;
 }
-
-currentTime();
-setInterval(currentTime, 1000);
 
 let citySelectElement = document.querySelector("#city-select");
 citySelectElement.addEventListener("change", changeCity);
+
+currentTime();
+setInterval(currentTime, 1000);

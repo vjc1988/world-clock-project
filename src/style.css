@@ -6,10 +6,12 @@ Body {
 h1 {
   text-align: center;
   padding: 10px;
+  font-size: 40px;
 }
 
 h2 {
   font-weight: 900;
+  font-size: 25px;
   margin: 0;
 }
 select {
